@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timeline Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Timeline CSS -->
+  <link href="dist/css/timeline.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sen', sans-serif;
+      padding: 30px;
+      /* width: 600px; */
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      font-size: 2em;
+    }
+    h2 {
+      font-family: 'Source Code Pro', monospace;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    p3 {
+      font-family: 'Source Code Pro', monospace;
+      font-weight: 700;
+      font-size: 0.78em;
+      letter-spacing: -0.01em;
+      /* margin-bottom: 5px; */
+
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="font-family: 'Source Code Pro', monospace; font-weight: 800;">Ascend Project Timeline</h1>
+
+  <div class="timeline" data-mode="horizontal" data-force-vertical-mode="100" data-visible-items="2">
+    <div class="timeline__wrap">
+      <div class="timeline__items" >
+        <div class="timeline__item" >
+          <div class="timeline__content" >
+            <h2>1980s</h2>
+            <p>UCLA designs and implements current mainframe financial system.</p>
+          </div>
+        </div>
+        <div class="timeline__item ">
+          <div class="timeline__content">
+            <h2>April 2018</h2>
+            <p>The Ascend project officially launched with a $120 million budget and a projected completion date of July 2020.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>December 2019</h2>
+            <p>The project was paused in December 2019 and entered a replanning phase, expecting to restart implementation in October 2021.</p>
+            <p3>Total Expenses: $41.4 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item ">
+          <div class="timeline__content">
+            <h2>December 2020</h2>
+            <p>As of December 2020, the estimated completion date for Bruin Finance had been pushed back to January 2024, according to a written statement to the UC Board of Regents.</p>
+            <p3>Total Expenses: $60.4 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>July 2021</h2>
+            <p>Under the leadership of the Business Transformation Office, the Ascend team released a new charter outlining the project’s revised scope, governance structure and timeline.</p>
+            <p3>Total Expenses: $62.7 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>January 2022</h2>
+            <p>The BTO was reorganized under IT Services, yielding ownership of the project to ITS leadership.</p>
+            <p3>Total Expenses: $65.3 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>October 2022</h2>
+            <p>Following multiple replanning phases and a rebranding, the project relaunched as Ascend 2.0 in October 2022.</p>
+            <p3>Total Expenses: $72.7 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>January 2024</h2>
+            <p>BruinBuy Plus, UCLA’s new procure-to-pay system, was released Jan. 2. The Ascend project team aimed for an early 2025 launch of Bruin Finance.</p>
+            <p3>Total Expenses: $122.2 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>April 2024</h2>
+            <p>Issues with BruinBuy Plus caused a backlog of over 50,000 unpaid invoices within the system’s first four months of use, leading to monthslong delays in payments to vendors.</p>
+            <p3>Total Expenses: $137.6 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>June 2024</h2>
+            <p>Ascend 2.0 executive sponsors announced a 12-week pause to reevaluate the project’s future in a Bruin Post sent to faculty and staff June 26.</p>
+            <p3>Total Expenses: $166.6 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>August 2024</h2>
+            <p>The 12-week project pause began Aug. 2, expecting to end in late October 2024.</p>
+            <p3>Total Expenses: $184.8 million</p3>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>May 2025</h2>
+            <p>The Ascend 2.0 project remains paused more than 40 weeks later.</p>
+            <p3>Total Expenses: $213.3 million</p3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline JS -->
+  <script src="dist/js/timeline.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      timeline(document.querySelectorAll('.timeline'));
+    });
+  </script>
+</body>
+</html>
