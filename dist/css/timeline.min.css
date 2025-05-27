@@ -309,7 +309,8 @@
 }
 
 .timeline--mobile {
-    padding: 0
+    padding: 0;
+    width: 100%;
 }
 
 .timeline--mobile:before {
@@ -321,12 +322,14 @@
     left: 0;
     padding-left: 40px;
     padding-right: 0;
-    width: 100%
+    width: 100%;
+    text-wrap: wrap;
 }
 
 .timeline--mobile .timeline__item:after {
-    left: 2px;
-    margin: 0
+    left: 12px;
+    margin: 0;
+    top: 50%;
 }
 
 .timeline--mobile .timeline__item .timeline__content:before {
@@ -342,7 +345,8 @@
     border-bottom: 10px solid transparent;
     border-right: 10px solid #fff;
     border-left: none;
-    border-top: 10px solid transparent
+    border-top: 10px solid transparent;
+    display: none;
 }
 
 /* @-webkit-keyframes fadeIn {
